@@ -27,7 +27,7 @@ function draw() {
   fill(255);
   rect(40, 40, windowWidth-90, windowHeight-80, 20);
 
-  image(img, 50, 50);
+  image(img, 50, 50, 1728, 972);
 
   fill(0);
   textAlign(CENTER);
