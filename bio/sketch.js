@@ -11,7 +11,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   slider = createSlider(0, 100, 16, 1);
-  slider.position(100, 250);
+  slider.position(950, 250);
   slider.style('width', '500px');
   sel = createSelect();
   sel.position(10, 10);
