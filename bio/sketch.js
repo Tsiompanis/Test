@@ -1,11 +1,13 @@
 let slider;
 let sel;
 let fyl;
+let percentage;
+let deaths;
 
 
 let img;
 function preload() {
-  img = loadImage('assets/bckg.png');
+  //img = loadImage('assets/bckg.png');
 }
 
 function setup() {
@@ -14,7 +16,7 @@ function setup() {
   slider.position(950, 250);
   slider.style('width', '500px');
   sel = createSelect();
-  sel.position(10, 10);
+  sel.position(1080, 305);
   sel.option('Αρσενικό');
   sel.option('Θυληκό');
   sel.changed(mySelectEvent);
@@ -31,9 +33,15 @@ function draw() {
 
   fill(0);
   textAlign(CENTER);
-  
   textSize(30);
-  text("ΗΛΙΚΙΑ: " + val,20,220,400,400);
+  text("ΗΛΙΚΙΑ: " + val,850,220,400,400);
+  text("ΦΥΛΟ: ",830,300,400,400);
+  textSize(40);
+	
+  if()
+
+
+  text("Το " + percentage + "% των ατομων με τα παραπάνω χαρακτηριστικά εμφανίζουν έμφραγμα του μυοκαρδίου. Περίπου " + deaths + " στους χίλους πεθαίνουν. Με το ποσοστό να πέφτει σταθερά καθε χρόνο!", 950, 395, 600, 400)
 }
 
 function mySelectEvent() {
